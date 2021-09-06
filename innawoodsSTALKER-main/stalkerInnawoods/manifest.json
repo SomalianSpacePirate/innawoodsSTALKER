@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "S.T.A.L.K.E.R_Innawoods",
+    "version": "1.0",
+
+    "description": "Generates a list of all items added to your character",
+
+    "icons": {
+        "48": "icons/favicon.ico"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.innawoods.net/*"],
+            "js": ["main.js"]
+        }
+    ]
+}
+
