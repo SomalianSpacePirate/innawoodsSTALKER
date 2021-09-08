@@ -257,23 +257,35 @@ btn.onclick = function() {
 //Sorting Algorithms: process an array to match stalker anomaly
 
 function sortWeapons(guns) {
-	console.log(guns); // used to see if the code works till this point
-	const wpnPrefix = "wpn_"; // all anomaly guns have this prefix
+	const diagnosticArray = [];
 	const nameArray = [];
 	guns.forEach((i) => {
 		if (i.name != "") {
 			var wpn = regexGunsAlgorithms(i.name);
-		} else{ var wpn = regexGunsAlgorithms(i.modelName);}
-		//let wpn = i.name.replaceAll(' ', '_').toLowerCase();
-		nameArray.push(wpnPrefix + wpn);
+			var dia = i.name;
+		} else{ var wpn = regexGunsAlgorithms(i.modelName); var dia = i.modelName;}
+		nameArray.push(wpn);
+		diagnosticArray.push(dia);
 	});
 	nameArray.sort();
-	console.log(nameArray);
-	return nameArray;
+	diagnosticArray.sort();
+	console.log(diagnosticArray); //prints the unmodified array
+	console.log(nameArray); //prints the modified FINAL array
+	return nameArray; 
 }
 
 function regexGunsAlgorithms(wpn) {
-	let finalWpn = wpn.replaceAll(' ', '_').toLowerCase();
+	let allButParen = /(^.*?)(?=\s\()/g; //selects everything except parenthesis
+
+	let selParen = /( \(.+\))/g; //selects everything inside parenthesis
+	let lowerCaseWpn = wpn.toLowerCase();
+	let noParenWpn = lowerCaseWpn.replace(selParen, '');
+	let slashAndQuotes = /\\|"/g;
+	let undesiredWords = /-|a1|barrett|w.|mount|gold|benelli|combat|government/g;
+	let noSlash = noParenWpn.replace(slashAndQuotes, '');
+	let noUndesiredWords = noSlash.replace(undesiredWords, '');
+
+	let finalWpn = noUndesiredWords;
 	return finalWpn;
 }
 
