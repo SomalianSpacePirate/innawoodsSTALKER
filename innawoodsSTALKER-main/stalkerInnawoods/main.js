@@ -277,15 +277,23 @@ function sortWeapons(guns) {
 function regexGunsAlgorithms(wpn) {
 	let allButParen = /(^.*?)(?=\s\()/g; //selects everything except parenthesis
 
-	let selParen = /( \(.+\))/g; //selects everything inside parenthesis
 	let lowerCaseWpn = wpn.toLowerCase();
+	let selParen = /(\s\(.+\))/g; //selects everything inside parenthesis
 	let noParenWpn = lowerCaseWpn.replace(selParen, '');
-	let slashAndQuotes = /\\|"/g;
-	let undesiredWords = /-|a1|barrett|w.|mount|gold|benelli|combat|government/g;
-	let noSlash = noParenWpn.replace(slashAndQuotes, '');
-	let noUndesiredWords = noSlash.replace(undesiredWords, '');
 
-	let finalWpn = noUndesiredWords;
+	let undesiredWords = /-1\b|loaded|empty|ii|sniper|mar\b|black|magpul|magazine|drum|bipod|paratrooper|stock|long|short|carbine|md\.|suppressor|sionics|&|camo|tape|extended|mag\b|melted|smg|standard|commando|tactical|franchi|a1|barrett|w\.|mount|gold|benelli|combat|government/g;
+	let noUndesiredWords = noParenWpn.replace(undesiredWords, '');
+
+	let illegalCharacters = /\\|"|-|^\s|\n\s|,|\s(?=\s)|\s$/g;
+	let undesiredCharacters = noUndesiredWords.replace(illegalCharacters, '');
+
+	//let illegalWhiteSpace = /^\s|\n\s|\s(?=\s)|\s$/g;
+	//let undesiredWhiteSpace = undesiredCharacters.replace(illegalWhiteSpace, '');
+
+	let wpnUnderScore = /\s/g;
+	let wpnWhiteSpace = undesiredCharacters.replace(wpnUnderScore, "_");
+
+	let finalWpn = wpnWhiteSpace;
 	return finalWpn;
 }
 
