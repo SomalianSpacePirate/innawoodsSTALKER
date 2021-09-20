@@ -164,15 +164,16 @@ function matchSelectedItems(totalItemArray, playerItemArray) {
 		for (let i = 0; i < totalItemArrayLength; i++) {
 			if (totalItemArray[i].imgEncoded === playerItem) {
 				//matchedItems.push(totalItemArray[i].name);
-				matchedItems.push(namingHeirachy(totalItemArray[i]));
+				//matchedItems.push(namingHeirachy(totalItemArray[i])); //sorted items
 				matchedObjects.push(totalItemArray[i]);
-				matchedObjectType.push(totalItemArray[i].type);
+				//matchedObjectType.push(totalItemArray[i].type); //sorted types
 			} else { continue; }
 		}
 	}
-	matchedItems.sort();
+	//matchedItems.sort();
 	matchedObjects.sort();
-	matchedObjectType.sort();
+	//matchedObjectType.sort();
+
 	//console.log(matchedItems);
 	//console.log(matchedObjects.type);
 	//console.log(matchedObjectType);
@@ -191,40 +192,40 @@ function namingHeirachy(targetItem) {
 	}
 }
 
-function sortingMatchedItems(matchedItems, categoryName) {
-	const matchedItemsLength = matchedItems.length;
-	const sortedArray = [];
-	for (let i = 0; i < matchedItemsLength; i++) {
-		if (matchedItems[i].type === categoryName) {
-			sortedArray.push(matchedItems[i]);
-		} else {
-			continue;
-		}
-	}
-	return sortedArray;
-}
-
-function algorithmCategoryCallbacks(sortedArray, callback) {
-	callbackFunction = callback(sortedArray); // callsback the respective sort function
-	return callbackFunction;
+function sortingTheMasterList(orderedList){
+	var currentType;
+	var currentArray = [];
+	currentType = orderedList[0].type; // start the chain reaction
+	orderedList.forEach((i) => {
+		(currentType === i.type) ?
+			currentArray.push(i.name) :
+			(() => {
+				console.log(currentType + ":\n");
+				console.log(currentArray);
+				console.log("\n");
+				currentType = i.type; // sets the currentType to the new type
+				currentArray = []; // resets the array to zero
+			})();
+	})
 }
 
 function masterSortingAlgorithm(matchedItems) {
-	const typeCategories = ["Weapon"];//, "Ammo", "Vest", "Bags"];
-	const callbackCategories = [ sortWeapons];//, sortVest, sortAmmo];
-	const stalkerItemNameArray = [];
-
-	const typeLength = typeCategories.length;
-	for (let i = 0; i < typeLength; i++) {
-		let sortedArray = sortingMatchedItems(matchedItems, typeCategories[i]);
-		//console.log(sortedArray); //prints out each category array
-		let stalkerArray = algorithmCategoryCallbacks(sortedArray, callbackCategories[i]);
-		let innawoodsLength = stalkerArray.length;
-		for (let i = 0; i < innawoodsLength; i++) {
-			stalkerItemNameArray.push(stalkerArray[i]);
-		}
-	}
-	return stalkerItemNameArray;
+	masterList = sortWeapons(matchedItems);
+	//console.log(discoverAllTypes(matchedItems));
+	orderedList = masterList.sort((a,b) => {
+		final = (a.type > b.type) ?
+		1 :
+		(a.type === b.type) ?
+		((a.name > b.name) ? 
+			1 :
+			-1)
+		: -1;
+		return final;
+	});
+	console.log("ORDERED ARRAY: \n");
+	console.log(orderedList);
+	console.log("\n\n\n");
+	sortingTheMasterList(orderedList);
 }
 
 function discoverAllTypes(arrayData) {
@@ -240,7 +241,7 @@ function discoverAllTypes(arrayData) {
 }
 
 function main(arrayData) {
-	console.log(discoverAllTypes(arrayData));
+	//console.log(discoverAllTypes(arrayData));
 	let playerItemArray = findCharacterLoadouts();
 	matchedItems = matchSelectedItems(arrayData, playerItemArray);
 	masterSortingAlgorithm(arrayData); // contains the whole unsorted array!!!
@@ -257,35 +258,31 @@ btn.onclick = function() {
 //Sorting Algorithms: process an array to match stalker anomaly
 
 function sortWeapons(guns) {
-	const diagnosticArray = [];
-	const nameArray = [];
 	guns.forEach((i) => {
 		if (i.name != "") {
 			var wpn = regexGunsAlgorithms(i.name);
-			var dia = i.name;
-		} else{ var wpn = regexGunsAlgorithms(i.modelName); var dia = i.modelName;}
-		nameArray.push(wpn);
-		diagnosticArray.push(dia);
+		} else if (i.modelName != ""){
+			var wpn = regexGunsAlgorithms(i.modelName);
+		}	else{
+			var wpn = i.id;
+		}
+		i.name = wpn;
 	});
-	nameArray.sort();
-	diagnosticArray.sort();
-	console.log(diagnosticArray); //prints the unmodified array
-	console.log(nameArray); //prints the modified FINAL array
-	return nameArray; 
+	return guns; 
 }
 
 function regexGunsAlgorithms(wpn) {
-	let allButParen = /(^.*?)(?=\s\()/g; //selects everything except parenthesis
+	//let allButParen = /(^.*?)(?=\s\()/g; //selects everything except parenthesis
 
 	let lowerCaseWpn = wpn.toLowerCase();
 	let selParen = /(\s\(.+\))/g; //selects everything inside parenthesis
 	let noParenWpn = lowerCaseWpn.replace(selParen, '');
 
-	let undesiredWords = /-1\b|loaded|empty|ii|sniper|mar\b|black|magpul|magazine|drum|bipod|paratrooper|stock|long|short|carbine|md\.|suppressor|sionics|&|camo|tape|extended|mag\b|melted|smg|standard|commando|tactical|franchi|a1|barrett|w\.|mount|gold|benelli|combat|government/g;
-	let noUndesiredWords = noParenWpn.replace(undesiredWords, '');
+	//let undesiredWords = /-1\b|loaded|empty|ii|sniper|mar\b|black|magpul|magazine|drum|bipod|paratrooper|stock|long|short|carbine|md\.|suppressor|sionics|&|camo|tape|extended|mag\b|melted|smg|standard|commando|tactical|franchi|a1|barrett|w\.|mount|gold|benelli|combat|government/g;
+	//let noUndesiredWords = noParenWpn.replace(undesiredWords, '');
 
-	let illegalCharacters = /\\|"|-|^\s|\n\s|,|\s(?=\s)|\s$/g;
-	let undesiredCharacters = noUndesiredWords.replace(illegalCharacters, '');
+	let illegalCharacters = /\\|\.|\/|"|-|^\s|\n\s|,|\s(?=\s)|\s$/g;
+	let undesiredCharacters = noParenWpn.replace(illegalCharacters, '');
 
 	//let illegalWhiteSpace = /^\s|\n\s|\s(?=\s)|\s$/g;
 	//let undesiredWhiteSpace = undesiredCharacters.replace(illegalWhiteSpace, '');

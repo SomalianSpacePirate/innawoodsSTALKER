@@ -1,0 +1,3 @@
+wpn_ak47 akm ak47 ak
+wpn_m4 m4 m4a1 ar15
+wpn_sks sks synthetic_sks sks_sport
