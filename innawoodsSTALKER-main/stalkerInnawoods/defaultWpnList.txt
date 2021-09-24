@@ -1,0 +1,122 @@
+wpn_binoc_inv         binoculars
+bolt                  bolts
+grenade_f1            f1_frag_grenade
+grenade_gd-05         m67_frag_grenade
+grenade_smoke         m18_smoke_grenade
+wpn_knife             combat_knife compact_knife
+grenade_rgd5          mk_iii_high_explosive_grenade
+wpn_upd
+wpn_9a91
+wpn_abakan            an94_abakan
+wpn_aek
+wpn_ak                ak
+wpn_ak12              ak12
+wpn_ak74              ak74
+wpn_ak74m 
+wpn_ak101             
+wpn_ak102             
+wpn_ak103             ak103
+wpn_ak104 
+wpn_ak105             ak105
+wpn_akm 
+wpn_aks74 
+wpn_aks74u            aks74u
+wpn_apb
+wpn_aps 
+wpn_ash12 
+wpn_aug               steyr_aug_a1
+wpn_aug_a3            steyr_aug_a3
+wpn_beretta           beretta_92fs_m9
+wpn_bizon             pp19_bizon
+wpn_bm16              toz54 toz54_short
+wpn_colt1911          colt_m1911a1 colt_m1911a1_government
+wpn_cz52              
+wpn_cz75 
+wpn_desert_eagle      imi_desert_eagle_xix imi_desert_eagle_xix_golden
+wpn_fal               fn_fal fn_fal_para
+wpn_famas3            fa_mas_g2 fa_mas_g2_commando
+wpn_fn57              fn_fiveseven
+wpn_fn2000            fn_f2000 fn_f2000_tactical
+wpn_fnc               
+wpn_fnp45 
+wpn_fort 
+wpn_fort500 
+wpn_g3sg1             h&k_hk33
+wpn_g36               h&k_g36c h&k_g36k h&k_g36v
+wpn_g43               h&k_g3a3 h&k_g3ka4
+wpn_galil             imi_galil imi_galil_galatz imi_galil_mar
+wpn_gaus86s           gauss_rifle
+wpn_glock             glock_18 glock_compact glock_standard
+wpn_grach 
+wpn_groza             ots14_groza
+wpn_gsh18             gsh18
+wpn_hk416 
+wpn_hk417 
+wpn_hpsa              browning_hipower_mk_2
+wpn_k98 
+wpn_kiparis           
+wpn_l85               enfield_sa80_l85 enfield_sa80_l86_lsw
+wpn_l96a1             ai_l96_awm
+wpn_lr300             zm_lr300
+wpn_m4                colt_m4_carbine
+wpn_m4a1 
+wpn_m16               colt_m16a1 colt_m16a1_m203_mount colt_m16a4
+wpn_m24               m24 
+wpn_m60               m60
+wpn_m79               m79_blooper
+wpn_m82               barrett_m82a1_m107
+wpn_m98b              barrett_m99
+wpn_m249              m249_minimi
+wpn_mk14              m21 m21_tactical
+wpn_mosin             mosin_m1891 nagant_m1895
+wpn_mossberg590       mossberg_m590
+wpn_mp5               h&k_mp5a2 h&k_mp5a2_guarder h&k_mp5a3 h&k_mp5k h&k_mp5sd
+wpn_mp7               h&k_mp7
+wpn_mp133 
+wpn_mp153 
+wpn_mp412
+wpn_oc33 
+wpn_p90               fn_90 fn_p90tr
+wpn_pb                pb
+wpn_pkm               pkm
+wpn_pm                makarov_pm
+wpn_pp2000 
+wpn_ppsh41            ppsh41
+wpn_protecta          armsel_protecta_striker
+wpn_remington700      remington_700
+wpn_remington870      remington_870
+wpn_rg6               m32_milkor_mgl140
+wpn_rpd               rpd44
+wpn_rpg7              rpg7_loaded rpg7_empty 
+wpn_rpk               rpk rpk74m
+wpn_saiga             saiga_762x39
+wpn_scar              fn_scarh fn_scarl fn_scarl_pdw
+wpn_sig220            sig_sauer_p228
+wpn_sig550            sig_sg551
+wpn_sig552            sig_sg552_commando
+wpn_sks               simonov_sks simonov_sks_tatical
+wpn_spas12            franchi_spas12
+wpn_sr25              sr25 
+wpn_sv98              
+wpn_svd               dragunov_svd dragunov_svds
+wpn_svt40             tokarev_svt40
+wpn_svu               svu_ots03
+wpn_toz34             toz34
+wpn_toz194 
+wpn_trg 
+wpn_tt33              tokarev_tt
+wpn_type63 
+wpn_ump45             h&k_ump45
+wpn_usas12            
+wpn_usp45             h&k_usp
+wpn_val               as_val
+wpn_vepr12            vepr12
+wpn_vihr              sr3m
+wpn_vintorez          vss_vintorez
+wpn_vityaz 
+wpn_vsk94             vsk94
+wpn_vssk              barrett_m82a2
+wpn_vz61 
+wpn_wa2000 
+wpn_walther 
+wpn_xm8               xm8_carbine xm8_pdw

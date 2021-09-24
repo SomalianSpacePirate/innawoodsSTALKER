@@ -1,0 +1,543 @@
+0: "ai_l96_awm"
+​​
+1: "ak"
+​​
+2: "ak103"
+​​
+3: "ak105"
+​​
+4: "ak12"
+​​
+5: "ak12"
+​​
+6: "ak74"
+​​
+7: "ak74_elite_melted"
+​​
+8: "ak74_golden"
+​​
+9: "ak_5"
+​​
+10: "ak_5b"
+​​
+11: "ak_5d"
+​​
+12: "akmsu"
+​​
+13: "aks74u"
+​​
+14: "aks74u"
+​​
+15: "aksu"
+​​
+16: "an94_abakan"
+​​
+17: "anm2_stinger"
+​​
+18: "armsel_protecta_striker"
+​​
+19: "as_val"
+​​
+20: "ashot"
+​​
+21: "ashot"
+​​
+22: "axe"
+​​
+23: "balisong_knife"
+​​
+24: "balisong_knife"
+​​
+25: "barong"
+​​
+26: "barrett_m82a1_m107"
+​​
+27: "barrett_m82a2"
+​​
+28: "barrett_m99"
+​​
+29: "baton"
+​​
+30: "bekas_auto"
+​​
+31: "benelli_m3_super_90"
+​​
+32: "benelli_m4_super_90_m1014"
+​​
+33: "beretta_92fs_m9"
+​​
+34: "beretta_950_jetfire"
+​​
+35: "browning_bar"
+​​
+36: "browning_bar"
+​​
+37: "browning_buck_mark"
+​​
+38: "browning_hipower_mk_2"
+​​
+39: "browning_m1919"
+​​
+40: "colt_ar6951_smg"
+​​
+41: "colt_lmg"
+​​
+42: "colt_m16a1"
+​​
+43: "colt_m16a1_m203_mount"
+​​
+44: "colt_m16a4"
+​​
+45: "colt_m1908_vest_pocket"
+​​
+46: "colt_m1911a1"
+​​
+47: "colt_m1911a1_government"
+​​
+48: "colt_m4_carbine"
+​​
+49: "colt_python"
+​​
+50: "combat_knife"
+​​
+51: "combat_knife"
+​​
+52: "compact_knife"
+​​
+53: "crossbow"
+​​
+54: "crossbow"
+​​
+55: "crowbar"
+​​
+56: "dragunov_svd"
+​​
+57: "dragunov_svds"
+​​
+58: "enfield_sa80_l85"
+​​
+59: "enfield_sa80_l86_lsw"
+​​
+60: "fa_mas_g2"
+​​
+61: "fa_mas_g2_commando"
+​​
+62: "falchion"
+​​
+63: "fire_axe"
+​​
+64: "fn_f2000"
+​​
+65: "fn_f2000_tactical"
+​​
+66: "fn_fal"
+​​
+67: "fn_fal_para"
+​​
+68: "fn_fiveseven"
+​​
+69: "fn_p90"
+​​
+70: "fn_p90tr"
+​​
+71: "fn_scarh"
+​​
+72: "fn_scarl"
+​​
+73: "fn_scarl_pdw"
+​​
+74: "folding_knife"
+​​
+75: "franchi_pa3"
+​​
+76: "franchi_spas12"
+​​
+77: "garand_m1"
+​​
+78: "gauss_rifle"
+​​
+79: "gepard"
+​​
+80: "gewehr_43"
+​​
+81: "glock_18"
+​​
+82: "glock_18"
+​​
+83: "glock_compact"
+​​
+84: "glock_standard"
+​​
+85: "gsh18"
+​​
+86: "h&k_23e"
+​​
+87: "h&k_g11k2"
+​​
+88: "h&k_g36c"
+​​
+89: "h&k_g36k"
+​​
+90: "h&k_g36v"
+​​
+91: "h&k_g3a3"
+​​
+92: "h&k_g3ka4"
+​​
+93: "h&k_hk33"
+​​
+94: "h&k_mg3"
+​​
+95: "h&k_mg36"
+​​
+96: "h&k_mp5a2"
+​​
+97: "h&k_mp5a2_guarder"
+​​
+98: "h&k_mp5a3"
+​​
+99: "h&k_mp5k"
+​
+[100…199]
+​​
+100: "h&k_mp5sd"
+​​
+101: "h&k_mp7"
+​​
+102: "h&k_msg90"
+​​
+103: "h&k_psg1"
+​​
+104: "h&k_sl8"
+​​
+105: "h&k_sl82"
+​​
+106: "h&k_ump45"
+​​
+107: "h&k_usp"
+​​
+108: "hatchet"
+​​
+109: "heavy_machete"
+​​
+110: "hk_ump9"
+​​
+111: "ice_axe"
+​​
+112: "imi_desert_eagle_xix"
+​​
+113: "imi_desert_eagle_xix_golden"
+​​
+114: "imi_galil"
+​​
+115: "imi_galil_galatz"
+​​
+116: "imi_galil_mar"
+​​
+117: "imi_uzi"
+​​
+118: "imi_uzi_micro"
+​​
+119: "imi_uzi_mini"
+​​
+120: "ingram_mac_m10"
+​​
+121: "ingram_mac_m10"
+​​
+122: "jatimatic_gg95"
+​​
+123: "kabar_knife"
+​​
+124: "kac_sr25"
+​​
+125: "kbk_wz_88_tantal"
+​​
+126: "kel_tec_su22ca"
+​​
+127: "kriss_super_v"
+​​
+128: "kriss_super_v"
+​​
+129: "kukri"
+​​
+130: "lwrci_m6"
+​​
+131: "m134_minigun"
+​​
+132: "m14"
+​​
+133: "m1917_trench_knife"
+​​
+134: "m1_carbine"
+​​
+135: "m1_carbine_para"
+​​
+136: "m21"
+​​
+137: "m21_tactical"
+​​
+138: "m24"
+​​
+139: "m249_minimi"
+​​
+140: "m32_milkor_mgl140"
+​​
+141: "m60"
+​​
+142: "m72_law"
+​​
+143: "m79_blooper"
+​​
+144: "machete"
+​​
+145: "madsen"
+​​
+146: "makarov_pm"
+​​
+147: "makeshift_concrete_club"
+​​
+148: "makeshift_knife"
+​​
+149: "makeshift_stone_axe"
+​​
+150: "mark_i_trench_knife"
+​​
+151: "mateba_unica"
+​​
+152: "mateba_unica"
+​​
+153: "mg42"
+​​
+154: "mosin_m1891"
+​​
+155: "mosin_m1891"
+​​
+156: "mosin_shot_rifle"
+​​
+157: "mossberg_m590"
+​​
+158: "mossberg_maverick_88"
+​​
+159: "mossberg_maverick_88"
+​​
+160: "mts255"
+​​
+161: "mts255"
+​​
+162: "nagant_m1895"
+​​
+163: "norinco_mak90"
+​​
+164: "norinco_qbz97"
+​​
+165: "norinco_type_562"
+​​
+166: "orion_flare_pistol"
+​​
+167: "ots14_groza"
+​​
+168: "ots14_groza"
+​​
+169: "pb"
+​​
+170: "pkm"
+​​
+171: "pm_md_65_aims"
+​​
+172: "pm_md_90"
+​​
+173: "police_baton"
+​​
+174: "portal_gun"
+​​
+175: "pp19_bizon"
+​​
+176: "ppsh41"
+​​
+177: "psl_rommak"
+​​
+178: "puma_p31"
+​​
+179: "remington_700"
+​​
+180: "remington_870"
+​​
+181: "remington_870"
+​​
+182: "remington_870dm"
+​​
+183: "remington_acr"
+​​
+184: "remington_acr"
+​​
+185: "remington_acr_cqb"
+​​
+186: "remington_m870"
+​​
+187: "rmb93"
+​​
+188: "rpd44"
+​​
+189: "rpg7_empty"
+​​
+190: "rpg7_loaded"
+​​
+191: "rpk"
+​​
+192: "rpk"
+​​
+193: "rpk74"
+​​
+194: "rpk74"
+​​
+195: "rpk74m"
+​​
+196: "rpk74m"
+​​
+197: "ruger_1022"
+​​
+198: "ruger_1022"
+​​
+199: "ruger_lcr22"
+​
+[200…269]
+​​
+200: "ruger_mark_ii"
+​​
+201: "ruger_mini14"
+​​
+202: "s&w_m36"
+​​
+203: "s&w_model_19"
+​​
+204: "s&w_model_500"
+​​
+205: "saiga12"
+​​
+206: "saiga12kv"
+​​
+207: "saiga12s"
+​​
+208: "saiga_762x39"
+​​
+209: "saiga_762x39"
+​​
+210: "saiga_762x39"
+​​
+211: "sig_sauer_p228"
+​​
+212: "sig_sg551"
+​​
+213: "sig_sg552_commando"
+​​
+214: "sig_sg556"
+​​
+215: "simonov_sks"
+​​
+216: "simonov_sks_tatical"
+​​
+217: "sks_with_fiberglass_stock"
+​​
+218: "sp81_flare_pistol"
+​​
+219: "springfield_m1903"
+​​
+220: "sr25"
+​​
+221: "sr3m"
+​​
+222: "sr3m"
+​​
+223: "steyr_aug_a1"
+​​
+224: "steyr_aug_a1_hbar"
+​​
+225: "steyr_aug_a3"
+​​
+226: "steyr_aug_a3_hbar"
+​​
+227: "steyr_aug_para"
+​​
+228: "steyr_tmp"
+​​
+229: "suomi_kp31"
+​​
+230: "svu_ots03"
+​​
+231: "sword"
+​​
+232: "tapanga"
+​​
+233: "taurus_4510_judge"
+​​
+234: "taurus_4510_judge"
+​​
+235: "thompson_m1_m1928"
+​​
+236: "thompson_m1_m1928"
+​​
+237: "throwing_knife"
+​​
+238: "tipmann_98_paintball_gun"
+​​
+239: "tokarev_svt40"
+​​
+240: "tokarev_tt"
+​​
+241: "tonfa_baton"
+​​
+242: "toz106_mts2001"
+​​
+243: "toz34"
+​​
+244: "toz341"
+​​
+245: "toz34_golden"
+​​
+246: "toz34_short"
+​​
+247: "toz54"
+​​
+248: "toz54"
+​​
+249: "toz54_short"
+​​
+250: "valmet_rk_62"
+​​
+251: "valmet_rk_95_tp"
+​​
+252: "valmet_rk_95_tp"
+​​
+253: "vepr12"
+​​
+254: "vepr12_sledgehammer"
+​​
+255: "vepr_sok94"
+​​
+256: "vepr_sok94r_pioneer"
+​​
+257: "vepr_sok95"
+​​
+258: "vsk94"
+​​
+259: "vss_vintorez"
+​​
+260: "vss_vintorez"
+​​
+261: "winchester_1200"
+​​
+262: "winchester_1200_short"
+​​
+263: "winchester_1894"
+​​
+264: "x26_tazer"
+​​
+265: "xm29_oicw"
+​​
+266: "xm8_carbine"
+​​
+267: "xm8_pdw"
+​​
+268: "zm_lr300"
+​​
+269: "zm_lr300"

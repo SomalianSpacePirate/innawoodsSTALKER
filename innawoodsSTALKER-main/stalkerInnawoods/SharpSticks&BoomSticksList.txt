@@ -1,0 +1,69 @@
+wpn_binoc             binoculars
+bolt                  bolts
+grenade_f1            f1_frag_grenade
+grenade_gd-05         m67_frag_grenade
+grenade_smoke         m18_smoke_grenade
+wpn_knife             combat_knife compact_knife
+grenade_rgd5          mk_iii_high_explosive_grenade
+wpn_abakan_n          an94_abakan
+wpn_ak12              ak12
+wpn_ak12_custom
+wpn_ak12_m1
+wpn_ak74_isg
+wpn_ak74_n
+wpn_ak74_pmc
+wpn_ak74m_beard
+wpn_ak74m_n
+wpn_ak74u_n1
+wpn_ak74u_tac
+wpn_ak104_alfa
+wpn_ak105
+wpn_ak105_sp
+wpn_akm_isg
+wpn_aksu_isg
+wpn_aksu_m1_isg
+wpn_colt1911_n
+wpn_dvl
+wpn_dvl_m1
+wpn_fal_aus
+wpn_fal_sa58_osw
+wpn_fn57
+wpn_gauss
+wpn_glock
+wpn_glock17
+wpn_glock17_m1
+wpn_k98_mod
+wpn_ks23
+wpn_ks23_ecolog
+wpn_m4_butcher
+wpn_m4_tac
+wpn_mp133
+wpn_mp153
+wpn_mp153_m1
+wpn_pb
+wpn_pl15
+wpn_pm 
+wpn_remington700
+wpn_rpg7
+wpn_rpk16
+wpn_ru556
+wpn_saiga12s_isg
+wpn_saiga12s_m1
+wpn_saiga12s_m2
+wpn_sig220_n
+wpn_sig226
+wpn_sks_molot
+wpn_sks_tac
+wpn_sr1m
+wpn_svd_m1
+wpn_svds
+wpn_svds_pmc
+wpn_toz106
+wpn_toz106_m1
+wpn_usp_tac
+wpn_val_tac
+wpn_vintorez_isg
+wpn_vintorez_m1
+wpn_vintorez_m2
+wpn_vintorez_n1
+wpn_walther_p99

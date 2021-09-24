@@ -13,8 +13,8 @@ import json;
 #    print(type(contents));
 #    f.write(contents);
 
-def targetValueList(index):
-  with open("itemList.txt", "r") as f:
+def targetValueList(index, txtFileName):
+  with open((txtFileName + ".txt"), "r") as f:
     file = f.readlines();
   tgtLine = file[index];
   tgtLine = tgtLine.split();
@@ -59,13 +59,18 @@ def lenItemList():
   count = len(file);
   return count;
 
+def targetTxtFile():
+  targetTextFile = input(str("Input the file name without the extension: "));
+  return targetTextFile;
+
 def main():
   print("warning: all inputs are case sensitive!!!\n");
   #fileName = targetFileName();
   fileName = "masterItemList.json";
+  txtFileName = targetTxtFile();
   index = targetIndex();
   for i in range(lenItemList()):
-    writeToJsonList(index, targetValueList(i), fileName);
+    writeToJsonList(index, targetValueList(i, txtFileName), fileName);
     index = index + 1;
 
 def test():

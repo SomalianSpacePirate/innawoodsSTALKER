@@ -73,9 +73,10 @@ console.log('SCRIPT LOAD INDICATOR');
 // Every line of code above is litterally practice for URL and Array
 // manipulation, so ignore. Lmao to all the losers who tried reading it
 
-const IMG_URL = 'https://innawoods.net/img/contents.json';
+const BASE_URL = 'https://innawoods.net/base/contents.json';
 const INNAWOODS_BAR_URL = 'https://innawoods.net/InnawoodsBar/contents.json';
-const URL_ARRAYS = [IMG_URL, INNAWOODS_BAR_URL];
+const RUS_URL = 'https://innawoods.net/rus/contents.json';
+const URL_ARRAYS = [BASE_URL, INNAWOODS_BAR_URL, RUS_URL];
 
 /* Objectives: create an array of all the items in the database
  * create a function to search for the items on the body
@@ -138,16 +139,21 @@ function masterRequestOnload(url) {
 };
 
 function biggestBlackHoleOfCallbacks() {
-	masterRequestOnload(IMG_URL).then((data) => {
+	masterRequestOnload(BASE_URL).then((data) => {
 		list1 = data.items;
 		return masterRequestOnload(INNAWOODS_BAR_URL);
 	}).then((data) => {
 		list2 = data.items;
 		totalItemArray = list1.concat(list2);
 		//console.log(totalItemArray);
+		return masterRequestOnload(RUS_URL);
+	}).then((data) => {
+		list3 = data.items;
+		totalItemArray = totalItemArray.concat(list3);
 		return main(totalItemArray); //this is what is returned from the blackhole lol
 	}).catch((err) => {
 		console.log(err);
+		console.log("CONNECTION TO JSON FILES FAILED, CHECK CALLBACKS & URL's");
 	})
 }
 
@@ -196,17 +202,23 @@ function sortingTheMasterList(orderedList){
 	var currentType;
 	var currentArray = [];
 	currentType = orderedList[0].type; // start the chain reaction
-	orderedList.forEach((i) => {
-		(currentType === i.type) ?
-			currentArray.push(i.name) :
-			(() => {
-				console.log(currentType + ":\n");
+	hardLimit = orderedList.length;
+	for (let i = 0; i < hardLimit; i++) {
+		if (currentType === orderedList[i].type) {
+			currentArray.push(orderedList[i].name)
+			if(i === hardLimit - 1) {
+				console.log("\n\n" + currentType + ": \n");
 				console.log(currentArray);
-				console.log("\n");
-				currentType = i.type; // sets the currentType to the new type
-				currentArray = []; // resets the array to zero
-			})();
-	})
+				break;
+			}
+		} else {
+			console.log(currentType + ": ");
+			console.log(currentArray);
+			currentArray = [];
+			currentType = orderedList[i].type;
+			currentArray.push(orderedList[i].name);
+		}
+	}
 }
 
 function masterSortingAlgorithm(matchedItems) {
@@ -224,8 +236,9 @@ function masterSortingAlgorithm(matchedItems) {
 	});
 	console.log("ORDERED ARRAY: \n");
 	console.log(orderedList);
-	console.log("\n\n\n");
-	sortingTheMasterList(orderedList);
+	//console.log("\n\n\n");
+	//sortingTheMasterList(orderedList);
+	return orderedList;
 }
 
 function discoverAllTypes(arrayData) {
@@ -241,17 +254,22 @@ function discoverAllTypes(arrayData) {
 }
 
 function main(arrayData) {
+	console.log("MAIN FUNCTION ACTIVE");
 	//console.log(discoverAllTypes(arrayData));
+
 	let playerItemArray = findCharacterLoadouts();
 	matchedItems = matchSelectedItems(arrayData, playerItemArray);
-	masterSortingAlgorithm(arrayData); // contains the whole unsorted array!!!
-	//masterSortingAlgorithm(matchedItems);
+
+	//masterSortingAlgorithm(arrayData); // contains the whole unsorted array!!!
+	masterSortingAlgorithm(matchedItems);
+
 	return console.log('MAIN_FUNCTION_COMPLETE');
 }
 
 // MAIN FUNCTION & OPERATIONS
 const btn = document.querySelector('button');
 btn.onclick = function() {
+	console.log("BUTTON PRESSED!!!");
 	biggestBlackHoleOfCallbacks();
 }
 
